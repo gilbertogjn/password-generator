@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Open+Sans:wght@300&family=Quintessential&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <div id="container">
+            <h1>
+                Generate a <br>
+                <span class="green">random password</span>
+            </h1>
+            <p>Never use an insecure passaword again.</p>
+            <button id="btn-generate" onclick="generatePasswords()">
+                Generate passawords
+            </button>
+            <hr>
+            <div id="container-passwords">
+                <div class="section-password">
+                    <span class="box-password">
+                        <span id="password-1"></span>
+                        <button 
+                            onclick="copyPassword1()" 
+                            id="btn-password-1" 
+                            class="btn-copy-pw">
+                            <i class="fa fa-clone"></i>
+                        </button>
+                    </span>
+                    <span id="copy-text-pw1"></span>
+                </div>
+                <div class="section-password">
+                    <span class="box-password">
+                        <span id="password-2"></span>
+                        <button 
+                            onclick="copyPassword2()" 
+                            id="btn-password-2" 
+                            class="btn-copy-pw">
+                            <i class="fa fa-clone"></i>
+                        </button>
+                    </span>
+                    <span id="copy-text-pw2"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

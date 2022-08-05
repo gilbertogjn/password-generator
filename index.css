@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    background-color: #171f29;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    border-radius: 12px;
+    padding: 5em;
+}
+
+main hr {
+    margin: 30px 0;
+    border: 1px solid #2F3E53;
+}
+
+main p {
+    margin: 15px 0;
+}
+
+h1 {
+    font-family: "Karla";
+    margin: 0;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.green {
+    color: #4ADF86;
+}
+
+#btn-generate {
+    background-color: #10B981;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-top: 40px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#btn-generate:hover {
+    background-color: #10ac78;
+}
+
+#container-passwords {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn-copy-pw {
+    background-color: #273549;
+    border: none;
+    color: #4ADF86;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-copy-pw:hover {
+    color: #39a866;
+}
+
+.box-password {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #273549;
+    width: 200px;
+    height: 40px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    color: #4ADF86;
+    font-size: 14px;
+}
+
+.box-password span {
+    width: 100%;
+    text-align: center;
+}
+
+#copy-text-pw1, #copy-text-pw2 {
+    color: #4ADF86;
+    font-size: 14px;
+    padding-left: 25px;
+}

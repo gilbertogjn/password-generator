@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 
+:root {
+    --blue: #2E8BC0;
+    --blue-hover: #2a7dad;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -24,7 +29,7 @@ main {
     align-items: center;
     background-color: #1F2937;
     border-radius: 12px;
-    padding: 5em;
+    padding: 0 5em;
 }
 
 main hr {
@@ -44,11 +49,11 @@ h1 {
 }
 
 .green {
-    color: #4ADF86;
+    color: var(--blue);
 }
 
 #btn-generate {
-    background-color: #10B981;
+    background-color: var(--blue);
     border: none;
     border-radius: 6px;
     padding: 15px 20px;
@@ -61,7 +66,7 @@ h1 {
 }
 
 #btn-generate:hover {
-    background-color: #10ac78;
+    background-color: var(--blue-hover);
 }
 
 #container-passwords {
@@ -73,13 +78,13 @@ h1 {
 .btn-copy-pw {
     background-color: #273549;
     border: none;
-    color: #4ADF86;
+    color: var(--blue);
     cursor: pointer;
     transition: all 0.2s;
 }
 
 .btn-copy-pw:hover {
-    color: #39a866;
+    color: var(--blue-hover);
 }
 
 .box-password {
@@ -92,7 +97,7 @@ h1 {
     padding: 5px 10px;
     border: none;
     border-radius: 6px;
-    color: #4ADF86;
+    color: var(--blue);
     font-size: 14px;
 }
 
@@ -102,7 +107,28 @@ h1 {
 }
 
 #copy-text-pw1, #copy-text-pw2 {
-    color: #4ADF86;
+    color: var(--blue);
     font-size: 14px;
     padding-left: 25px;
+}
+
+#container-head, #container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 12px;
+    text-align: center;
+}
+
+#container-footer a {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#container-footer a:hover {
+    color: #fff;
+    transition: all 0.2s ease-out;
 }

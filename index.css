@@ -137,7 +137,7 @@ h1 {
 @media (max-width: 600px) {
     main {
         width: 100%;
-        padding: 3em;
+        padding: 1.2em;
     }
     
     #container {
@@ -146,6 +146,10 @@ h1 {
 
     #container-head, #container-footer {
         height: 20px;
+    }
+
+    #container-footer {
+        margin-bottom: 30px;
     }
 
     .box-password {
